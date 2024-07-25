@@ -1,0 +1,52 @@
+# Project: Project1
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o Book.o BooksList.o Date.o HelperFunc.o IssuedBook.o Member.o MembersList.o Prompt.o
+LINKOBJ  = main.o Book.o BooksList.o Date.o HelperFunc.o IssuedBook.o Member.o MembersList.o Prompt.o
+LIBS     = 
+INCS     = 
+CXXINCS  = 
+BIN      = "Library Management Sys.exe"
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Book.o: Book.cpp
+	$(CPP) -c Book.cpp -o Book.o $(CXXFLAGS)
+
+BooksList.o: BooksList.cpp
+	$(CPP) -c BooksList.cpp -o BooksList.o $(CXXFLAGS)
+
+Date.o: Date.cpp
+	$(CPP) -c Date.cpp -o Date.o $(CXXFLAGS)
+
+HelperFunc.o: HelperFunc.cpp
+	$(CPP) -c HelperFunc.cpp -o HelperFunc.o $(CXXFLAGS)
+
+IssuedBook.o: IssuedBook.cpp
+	$(CPP) -c IssuedBook.cpp -o IssuedBook.o $(CXXFLAGS)
+
+Member.o: Member.cpp
+	$(CPP) -c Member.cpp -o Member.o $(CXXFLAGS)
+
+MembersList.o: MembersList.cpp
+	$(CPP) -c MembersList.cpp -o MembersList.o $(CXXFLAGS)
+
+Prompt.o: Prompt.cpp
+	$(CPP) -c Prompt.cpp -o Prompt.o $(CXXFLAGS)

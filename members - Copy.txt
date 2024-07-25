@@ -1,0 +1,4 @@
+11,Reatile Masaile,Thaba-Tseka,Male
+12,Thabo,Maseru,Male
+13,Thabiso,Qoaling,Male
+14,Palesa,CPoint,Female
