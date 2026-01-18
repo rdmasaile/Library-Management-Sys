@@ -70,6 +70,7 @@ vector<IssuedBook> Member::getIssuedBooks(){
 	return IssuedBooks;
 }
 
+
 double Member::getAmountOwing(){
 	double totalAmount = 0;
 	for(IssuedBook ibook: IssuedBooks){

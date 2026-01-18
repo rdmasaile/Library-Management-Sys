@@ -355,6 +355,8 @@ int main()
 		{
 
 			memberMenu(option);
+
+			// View Book list
 			if (option == 1)
 			{
 				cout << endl
@@ -365,6 +367,8 @@ int main()
 				Prompt::input("\nPlease choose option to order books by: ", option);
 				books->displayBooks(option);
 			}
+
+			// Search for a Book
 			else if (option == 2)
 			{
 				string key;
