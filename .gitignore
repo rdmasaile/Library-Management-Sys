@@ -1,3 +1,4 @@
 # Ignore compiled object and executable files
 *.obj
 *.exe
+*.pdb
