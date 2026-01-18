@@ -2,9 +2,9 @@
 #include <vector>
 #include <iostream>
 #include <iomanip>
-#include <bits/stdc++.h>
 #include <string>
 #include <exception>
+#include <algorithm>
 
 using namespace std;
 

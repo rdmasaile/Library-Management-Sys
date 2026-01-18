@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include "HelperFunc.h"
+#include <string>
 
 using namespace std;
 

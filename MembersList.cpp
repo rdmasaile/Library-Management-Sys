@@ -3,10 +3,10 @@
 #include <vector>
 #include <iostream>
 #include <iomanip>
-#include <bits/stdc++.h>
 #include <exception>
 #include "Member.h"
 #include "HelperFunc.h"
+#include <algorithm>
 
 using namespace std;
 
